@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+  font-family: 'Open Sans', sans-serif;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: white;
+  border-bottom: 1px solid black;
+}
+
+.nav-links {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: black;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.nav-links a:hover {
+  color: #888888;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown > a {
+  text-decoration: none;
+  color: black;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.dropdown > a:hover {
+  color: #888888;
+}
+
+.dropdown-box {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  border: 1px solid #dddddd;
+  border-top: 2px solid red;
+  padding: 10px 0;
+  min-width: 200px;
+  z-index: 999;
+}
+
+.dropdown-box a {
+  display: block;
+  padding: 8px 20px;
+  text-decoration: none;
+  color: black;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.dropdown-box a:hover {
+  color: #888888;
+}
+
+.dropdown:hover .dropdown-box {
+  display: block;
+}
