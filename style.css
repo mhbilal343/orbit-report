@@ -1,6 +1,8 @@
-<<<<<<< HEAD
+
+/* Needed to add font*/
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
 
+/* Nav Menu*/
 * {
   margin: 0;
   padding: 0;
@@ -8,7 +10,7 @@
 }
 
 body {
-  background-color: white;
+  background-color: #f7f7f7;
   font-family: 'Open Sans', sans-serif;
 }
 
@@ -17,8 +19,8 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 20px 40px;
-  background-color: white;
-  border-bottom: 1px solid black;
+  background-color: rgb(255, 255, 255);
+  border-bottom: 2px solid black;
 }
 
 .nav-links {
@@ -60,7 +62,7 @@ nav {
   left: 0;
   background-color: white;
   border: 1px solid #dddddd;
-  border-top: 2px solid red;
+  border-top: 2px solid #ef5656;
   padding: 10px 0;
   min-width: 200px;
   z-index: 999;
@@ -82,6 +84,18 @@ nav {
 .dropdown:hover .dropdown-box {
   display: block;
 }
-=======
 
->>>>>>> e26396b56337ec5528cad4cc3751f2963c3b7975
+/* Image Index Banner*/
+.banner {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+
+.banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-bottom: 2px solid rgb(0, 0, 0)
+}
